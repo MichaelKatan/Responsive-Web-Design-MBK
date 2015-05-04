@@ -82,7 +82,7 @@ html, p, body, nav, section, div, h2, img, ul {
   width: 100%;
   padding-top: 35px;
   text-align: center;
-  height: 600px;
+  height: 635px;
 }
 .menuItem {
   padding-top: 25px;
@@ -312,8 +312,7 @@ html, p, body, nav, section, div, h2, img, ul {
 }
 
 #sushiPage {
-  height: 635px;
-  padding-bottom: 50px;
+   padding-bottom: 50px;
 }
 
 #reviewsPage {
