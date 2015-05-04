@@ -1,0 +1,12 @@
+body {
+	overflow-x:hidden;
+}
+
+#menu-icon {
+	height: 20px;
+}
+nav {
+	position:fixed;
+	width: 100%
+	z-index: 0;
+}
