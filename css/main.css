@@ -1,12 +1,431 @@
-body {
-	overflow-x:hidden;
+html, p, body, nav, section, div, h2, img, ul {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  list-style-type: none;
+  overflow-x: off;
 }
 
-#menu-icon {
-	height: 20px;
+#icon-menu {
+  background-color: white;
+	height: 45px;
+  position: fixed;
+  top: 25px;
+  left: 225px;
+  z-index: 2;
 }
-nav {
+
+.menu {
+  padding-left: 20px;
+  background-color: lightblue;
 	position:fixed;
-	width: 100%
-	z-index: 0;
+	width: 200px;
+  height: 300px;
+	z-index: 10;
+  top: -300;
+  font-size: 1.5em;
+}
+.menu ul {
+    border-top: 1px solid #636366;
+}
+.menu li {
+  border-bottom: 1px solid #636366;
+  line-height: 45px;
+}
+#logo {
+
+  background-color: #000062;
+  text-align: center;
+  color: white;
+  position: fixed;
+  top:0px;
+  width: 100%;
+  z-index: 1;
+  padding-bottom: 20px;
+}
+#logo h1 {
+  float: left;
+  margin-left: 40%;
+}
+#logo h2 {
+  float:left;
+  margin:30px;
+}
+
+#info {
+  padding-top: 150px;
+  background-color: darkred;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  width: 100%;
+  height: 150px;
+
+}
+.contents {
+  width: 30%;
+  float: left;
+  margin-left: 2.5%;
+}
+
+#basics {
+  padding-left: 7%;
+  padding-top: 30px;
+  background-color: grey;
+  color: white;
+  padding-bottom: 30px;
+}
+
+#sushi {
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding-top: 35px;
+  text-align: center;
+  height: 600px;
+}
+.menuItem {
+  padding-top: 25px;
+  float:left;
+  width: 30%;
+  margin-left: 2.5%;
+}
+
+#reviews {
+  padding-top: 30px;
+  background-color: darkred;
+  color: white;
+  padding-bottom: 30px;
+  padding-left: 6%;
+  padding-right:6%;
+}
+.custReview {
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  margin: 5px;
+  padding:5px;
+}
+
+#news {
+  padding-top: 30px;
+  background-color: grey;
+  color: white;
+  padding-bottom: 30px;
+  padding-left: 6%;
+  padding-right:6%;
+}
+.news {
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  margin: 5px;
+  padding:5px;
+}
+.foot {
+  color:white;
+  background-color: black;
+  padding: 10px;
+}
+
+#infoPage {
+  height: 85%;
+  padding-top: 150px;
+  background-color: darkred;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  width: 100%;
+}
+.contentsPage {
+  width: 30%;
+  float: left;
+  margin-left: 2.5%;
+}
+.footPage {
+  color:white;
+  background-color: black;
+  padding: 10px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+#basicsPage {
+  font-size: 30px;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 150px;
+  background-color: grey;
+  color: white;
+  min-height: 80%;
+  padding-bottom: 150px;
+}
+
+#sushiPage {
+  overflow: hidden;
+  display:inline-block;
+  color: white;
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
+  padding-bottom: 200px;
+  background-color: black;
+  
+}
+.menuItemPage {
+  display:inline-block;
+  padding-right: 5px;
+  padding-top: 25px;
+  width: 150px;
+  height: 200px;
+  margin:20px;
+
+}
+
+#reviewsPage {
+  padding-top: 100px;
+  background-color: darkred;
+  color: white;
+  padding-left: 6%;
+  padding-right:6%;
+  min-height: 80%;
+  padding-bottom: 175px;
+}
+.custReviewPage {
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  margin: 5px;
+  padding:5px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 704px) {
+
+#infoPage {
+  padding-top: 150px;
+  background-color: darkred;
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 200px;
+  margin-bottom: 50px;
+}
+.contentsPage {
+  width:100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+#basicsPage {
+  font-size: 20px;
+  padding-top: 120px;
+  background-color: grey;
+  height: auto;
+  margin-bottom: 50px;
+  padding-bottom: 150px;
+}
+
+  #icon-menu{
+   left: 25px;
+   top:25px;
+  }
+  #logo{
+    height: 100px;
+  }
+  #logo h2 {
+    margin-top: 0px;
+  }
+  .contents {
+    font-size: 20px;
+    width:90%;
+    clear: both;
+    padding-bottom: 20px;
+  }
+  #info {
+    padding-top: 150px;
+    height: 350px;
+  }
+
+  .menuItem{
+    width: 40%;
+    margin-left: 5%;
+    height:200px;
+  }
+  .menuItem img {
+    width: 90%;
+  }
+
+  #sushi {
+    padding-top: 70px;
+    height:820px;
+  }
+  #placehold {
+  padding-top: 0px;
+  float:left;
+  width: 0%;
+  margin-left: 0%;
+  }
+  #mMenu {
+    height: 0px;
+  }
+  #reviews {
+    padding-top: 70px;
+  }
+  #news {
+    padding-top: 70px;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 705px) and (max-width: 834px) {
+  .footPage {
+    position: relative;
+    bottom: 0px;
+    height: 80px;
+    font-size: 12px;
+    text-align: left;
+  }
+  #infoPage {
+  height: 80%;
+  padding-top: 100px;
+  background-color: darkred;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  width: 100%;
+
+}
+.contentsPage {
+  width: 30%;
+  float: left;
+  margin-left: 2.5%;
+}
+
+#basicsPage {
+  font-size: 20px;
+  padding-top: 100px;
+  background-color: grey;
+  height: auto;
+  margin-bottom: 0px;
+  padding-bottom: 100px;
+}
+
+#sushiPage {
+  padding-bottom: 50px;
+}
+
+#reviewsPage {
+  padding-bottom: 50px;
+}
+
+  #icon-menu {
+    left: 25px;
+    top:20px;
+  }
+  #logo {
+    height:60px;
+  }
+  #logo h1 {
+    float: left;
+
+  }
+  #logo h2 {
+    float: left;
+
+  }
+  .contents {
+    float: left;
+    font-size: 20px;
+  }
+  #info {
+    padding-top: 100px;
+  }
+  .menuItem img {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 835px) and (max-width: 962px) {
+  #icon-menu {
+    left: 25px;
+    top:20px;
+  }
+  #logo {
+    height: 60px;
+  }
+  #logo h1{
+    margin-left: 30%;
+  }
+  .contents {
+    font-size: 20px;
+  }
+  #info {
+    padding-top: 100px;
+  }
+  #reviews {
+    padding-top: 50px;
+  }
+}
+
+@media only screen and (min-width: 963px) and (max-width: 1232px) {
+  #reviewsPage {
+    height: 80%;
+  }
+  #logo {
+    height: 60px;
+  }
+    #icon-menu {
+    left: 25px;
+    top:20px;
+  }
+  #logo h1{
+    margin-left: 35%;
+  }
+    .contents {
+    font-size: 23px;
+  }
+  #info {
+    padding-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 1233px) and (max-width: 1439px) {
+  #logo {
+    height: 60px;
+  }
+    #icon-menu {
+    left: 25px;
+    top:20px;
+  }
+  #logo h1{
+    margin-left: 35%;
+  }
+    .contents {
+    font-size: 30px;
+  }
+  #info {
+    padding-top: 100px;
+    height: 200px;
+  }
+}
+
+@media only screen and (min-width: 1440px){
+  #logo {
+    height: 80px;
+  }
+    #icon-menu {
+    left: 25px;
+    top:20px;
+  }
+  #logo h1{
+    margin-left: 40%;
+  }
+    .contents {
+    font-size: 30px;
+  }
+  #info {
+    padding-top: 120px;
+    height: 160px;
+  }
 }
